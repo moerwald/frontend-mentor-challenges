@@ -1,0 +1,61 @@
+:root {
+    --prim-color-1: hsl(158, 36%, 37%);
+    --prim-color-2: hsl(30, 38%, 92%);
+
+    --neutral-color-1: hsl(212, 21%, 14%);
+    --neutral-color-2: hsl(228, 12%, 48%);
+    --neutral-color-3: hsl(0, 0%, 100%);
+
+ box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--prim-color-2);
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body *+* {
+    margin-top: 1.5em;
+}
+
+.container {
+    margin: 1em 1em;
+    background-color: black ;
+}
+
+div > h1 {
+font-family: 'Fraunces', serif;
+}
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+    */
+
+p {
+    font-size: 14px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

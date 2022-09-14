@@ -9,7 +9,6 @@
     --mobile-width: 375px;
 
     box-sizing: border-box;
-
 }
 
 body {
@@ -26,19 +25,17 @@ div>h1 {
     font-family: 'Fraunces', serif;
 }
 
-
 p {
     font-size: 14px;
 }
 
-
-picture > img{
-    width: var(--mobile-width);
+picture > img {
+    min-width: var(--mobile-width);
 }
 
 article {
     border-radius: 25px;
-    width: var(--mobile-width);
+    min-width: var(--mobile-width);
     overflow: hidden;
     background-color: var(--neutral-color-3);
 }
@@ -50,17 +47,16 @@ article {
 }
 
 .description {
-    font-family: 'Montserrat' , serif;
+    font-family: 'Montserrat', serif;
     color: var(--neutral-color-2);
-    line-height: 1.5;;
+    line-height: 1.5;
 }
 
-#actual-price{
+#actual-price {
     color: var(--prim-color-1);
-
 }
 
-#old-price{
+#old-price {
     color: var(--neutral-color-2);
     font-size: 0.5em;
     text-align: center;
@@ -80,6 +76,13 @@ button {
     border-color: transparent;
 }
 
+@media (min-width: 376px) {
+    article {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
 
 .attribution {
     font-size: 11px;

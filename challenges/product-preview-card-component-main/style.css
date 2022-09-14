@@ -29,7 +29,7 @@ p {
     font-size: 14px;
 }
 
-picture > img {
+picture>img {
     min-width: var(--mobile-width);
 }
 
@@ -38,6 +38,7 @@ article {
     min-width: var(--mobile-width);
     overflow: hidden;
     background-color: var(--neutral-color-3);
+    margin: auto;
 }
 
 .description-container {
@@ -77,14 +78,25 @@ button {
 }
 
 @media (min-width: 376px) {
+    body {
+        height: 100%;
+    }
+
     article {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 400px 400px;
+        width:40%;
+        margin: auto;
+    }
+
+    picture>img {
+        max-width: 400px;
     }
 
 }
 
 .attribution {
+    margin-top: 3rem;
     font-size: 11px;
     text-align: center;
 }

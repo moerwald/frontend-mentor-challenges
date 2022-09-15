@@ -1,0 +1,29 @@
+
+body {
+    height: 100vh;
+}
+
+.container > div:first-of-type{
+    border: 1px solid blue;
+
+}
+
+.container {
+
+    display: flex;
+    height: 100%;
+    border: 1px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.item {
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 400px;
+    min-height: 200px;
+    border: 1px solid green;
+}

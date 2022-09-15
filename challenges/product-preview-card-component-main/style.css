@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--prim-color-2);
+    height: 100vh;
 }
 
 *,
@@ -30,15 +31,17 @@ p {
 }
 
 picture>img {
-    min-width: var(--mobile-width);
+    width: calc( var(--mobile-width) - 25px);
 }
 
 article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     border-radius: 25px;
-    min-width: var(--mobile-width);
     overflow: hidden;
     background-color: var(--neutral-color-3);
-    margin: auto;
+    margin: 1rem;
 }
 
 .description-container {
@@ -55,11 +58,13 @@ article {
 
 #actual-price {
     color: var(--prim-color-1);
+    font-size: 3em;
+    font-weight: 700;
 }
 
 #old-price {
     color: var(--neutral-color-2);
-    font-size: 0.5em;
+    font-size: 1em;
     text-align: center;
     padding-left: 1em;
     text-decoration: line-through;
@@ -68,31 +73,18 @@ article {
 
 }
 
+.prices {
+    display: flex;
+    align-items: center;
+}
+
 button {
     color: var(--neutral-color-3);
     background-color: var(--prim-color-1);
-    width: 300px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     border-color: transparent;
-}
-
-@media (min-width: 376px) {
-    body {
-        height: 100%;
-    }
-
-    article {
-        display: grid;
-        grid-template-columns: 400px 400px;
-        width:40%;
-        margin: auto;
-    }
-
-    picture>img {
-        max-width: 400px;
-    }
-
 }
 
 .attribution {
@@ -103,4 +95,33 @@ button {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 660px) {
+
+    main {
+        height: inherit;
+    }
+
+    .desktop-container {
+        height: inherit;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    article{
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .description-container {
+        width: 350px;
+    }
+    
 }

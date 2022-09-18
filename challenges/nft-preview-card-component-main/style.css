@@ -1,0 +1,80 @@
+
+:root {
+
+
+--primary-clr-soft-blue: hsl(215, 51%, 70%);
+--primary-clr-cyan: hsl(178, 100%, 50%);
+
+
+--secondary-very-dark-blue-main-background: hsl(217, 54%, 11%);
+--secondary-very-dark-blue-card-background: hsl(216, 50%, 16%);
+--secondary-very-dark-blue-line: hsl(215, 32%, 27%);
+--secondary-white: hsl(0, 0%, 100%);
+
+--width-mobile: 375px;
+--width-desktop: 1440px;
+
+--font-size: 18px
+}
+
+body {
+    font-size: 18px;
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: var(--secondary-very-dark-blue-main-background);
+}
+
+.name {
+    color: var(--secondary-white);
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-clr-soft-blue);
+    background-color: var(--secondary-very-dark-blue-card-background);
+}
+
+.container-stats {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-stats {
+    color: var(--primary-clr-soft-blue);
+
+}
+
+.container-stats > strong {
+    color: var(--primary-clr-cyan);
+}
+
+
+header {
+    color: var(--secondary-white);
+}
+
+hr {
+    color: var (--secondary-very-dark-blue-line);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

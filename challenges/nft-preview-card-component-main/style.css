@@ -10,17 +10,15 @@
 --secondary-very-dark-blue-card-background: hsl(216, 50%, 16%);
 --secondary-very-dark-blue-line: hsl(215, 32%, 27%);
 --secondary-white: hsl(0, 0%, 100%);
+--secondary-clr-cyan-overlay: hsla(178, 100%, 50%, 0.5);
+
+--border-radius: 15px;
 
 --width-mobile: 375px;
 --width-desktop: 1440px;
 
 --font-size: 18px
 }
-
-body {
-    font-size: 18px;
-}
-
 
 *,
 ::before,
@@ -30,8 +28,22 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+body {
+    font-size: 18px;
+    height: 100vh;
+    width: 100vw;
+}
+
 main {
     background-color: var(--secondary-very-dark-blue-main-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 50px;
 }
 
 .name {
@@ -40,35 +52,98 @@ main {
 
 .container-card {
     display: flex;
-    flex-direction: column;
     color: var(--primary-clr-soft-blue);
     background-color: var(--secondary-very-dark-blue-card-background);
+    border-radius: var(--border-radius);
+}
+
+.container-card-inner {
+    margin: 8% 8%;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 1em;
 }
 
 .container-stats {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
 
 .container-stats {
     color: var(--primary-clr-soft-blue);
-
+    font-size: 0.9em;
 }
 
 .container-stats > strong {
     color: var(--primary-clr-cyan);
 }
 
+.crypto-amount {
+    color: var(--primary-clr-cyan);
+}
 
 header {
     color: var(--secondary-white);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#currency-description {
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
 hr {
-    color: var (--secondary-very-dark-blue-line);
+    color: var (var(--primary-clr-soft-blue));
+    opacity: 0.25;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-eqilbirium{
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.icon-view:hover {
+    opacity: 1;
+}
+
+.icon-view {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:var(--secondary-clr-cyan-overlay) ;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: var(--border-radius);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0.5em;
+}
+
+footer > img {
+    width: 40px;
+    border: 1px solid var(--secondary-white);
+    border-radius: 100%;
+}
 
 .attribution {
     font-size: 11px;

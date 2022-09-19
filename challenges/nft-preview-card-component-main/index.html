@@ -11,36 +11,57 @@
   <title>Frontend Mentor | NFT preview card component</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <main>
     <article class="container-card">
-      <img src="images/image-equilibrium.jpg" alt="image of a colored 3D cube">
-      <header>
-        Equilibrium #3429
-      </header>
-      <p>
-        Our Equilibrium collection promotes balance and calm.
-      </p>
-      <p class="container-stats">
-        <strong>0.041 ETH</strong>
-        <span> 3 days left</span>
-      </p>
-      <hr>
-      <footer>
-        Creation of <span class="name"> Jules Wyvern</span>
-      </footer>
+      <div class="container-card-inner">
 
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        <div class="image-container">
+          <img class="img-eqilbirium" src="images/image-equilibrium.jpg" alt="image of a colored 3D cube">
+          <div class="icon-view">
+            <img src="images/icon-view.svg" alt="icon of an eye that will overlay over the 3D cube image">
+          </div>
+        </div>
+
+        <header>
+          Equilibrium #3429
+        </header>
+
+        <p id="currency-description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <p class="container-stats">
+          <span class="crypto-amount">
+            <img src="images/icon-ethereum.svg" alt="icon for etherium currency">
+            <strong>0.041 ETH</strong>
+          </span>
+          <span>
+            <img src="images/icon-clock.svg" alt="clock icon">
+             3 days left</span>
+        </p>
+
+        <hr>
+        <footer>
+          <img src="images/image-avatar.png" alt="image of an avatar">
+          <span>
+            Creation of <span class="name">Jules Wyvern</span>
+          </span>
+        </footer>
+
       </div>
 
     </article>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </main>
 
 </body>

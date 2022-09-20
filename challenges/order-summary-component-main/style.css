@@ -17,6 +17,10 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+body {
+    height: 100vh;
+}
+
 h1 {
     font-weight: 900;
     font-size: 1.5em;
@@ -25,7 +29,7 @@ h1 {
 
 strong {
     font-weight: 700;
-    color:black;
+    color: black;
 }
 
 p {
@@ -33,8 +37,96 @@ p {
     color: var(--desaturated-blue);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
 
+    height: 100%;
 
+    background-color: var(--pale-blue);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+
+    width: 330px;
+
+    gap: 1.5em;
+
+    border-radius: 25px;
+    overflow: hidden;
+
+    padding-bottom: 1em;
+}
+
+.main-container>img {
+    height: 170px;
+}
+
+.main-container>* {
+    flex: 1 1 100%;
+}
+
+.main-container>p:first-of-type {
+    text-align: center;
+    font-size: 0.95em;
+    padding: 0 2.5em;
+    font-weight: 300;
+}
+
+.plan-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.plan-info-container * {
+    font-size: 0.95em;
+}
+
+.plan-info-container>a {
+    font-size: 0.80em;
+}
+
+#change-subscription:hover {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+#button-pay {
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    width: 85%;
+    color: var(--very-pale-blue);
+    font-weight: 900;
+    font-size: 0.95em;
+    border-color: transparent;
+    box-shadow: 5px 20px 20px var(--pale-blue);
+}
+
+#button-pay:hover {
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+#cancel-order-link {
+    padding-top: 5%;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#cancel-order-link:hover {
+    color: black;
+}
 
 .attribution {
     font-size: 11px;

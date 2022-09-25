@@ -5,7 +5,9 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --width-screen : 330px;
 }
+
 
 *,
 ::after,
@@ -55,7 +57,7 @@ main {
     align-items: center;
     background-color: var(--very-pale-blue);
 
-    width: 330px;
+    width: var(--width-screen);
 
     gap: 1.5em;
 
@@ -65,15 +67,15 @@ main {
     padding-bottom: 1em;
 }
 
-.main-container>img {
-    height: 170px;
+.main-container > img {
+    width: 100%
 }
 
-.main-container>* {
+.main-container > * {
     flex: 1 1 100%;
 }
 
-.main-container>p:first-of-type {
+.main-container > p:first-of-type {
     text-align: center;
     font-size: 0.95em;
     padding: 0 2.5em;
@@ -128,6 +130,7 @@ main {
     color: black;
 }
 
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -135,4 +138,10 @@ main {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px){
+    :root {
+        --width-screen : 450px;
+    }
 }

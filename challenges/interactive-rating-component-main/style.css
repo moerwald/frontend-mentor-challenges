@@ -101,6 +101,13 @@ p {
     text-align: center;
 }
 
+.rating_section li:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+    color: white;
+}
+
+
 button {
     background-color: var(--orange);
     border: 0px;
@@ -108,6 +115,17 @@ button {
     height: 3em;
     color: white;
     text-transform: uppercase;
+}
+
+.rating-option.rating-clicked {
+    background-color: var(--orange);
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--orange);
 }
 
 .thank_you_section {

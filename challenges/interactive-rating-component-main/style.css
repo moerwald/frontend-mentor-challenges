@@ -128,10 +128,14 @@ button:hover {
     color: var(--orange);
 }
 
-.thank_you_section {
-    display: none;
+button:disabled {
+    background-color: var(--light-grey);
+    opacity: 0.5;
 }
 
+.display-no {
+    display: none;
+}
 
 .attribution {
     margin: 5rem;

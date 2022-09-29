@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 :root {
     --orange: hsl(25, 97%, 53%);
     --white: hsl(0, 0%, 100%);
@@ -7,8 +10,15 @@
     --very-dark-blue: hsl(216, 12%, 8%);
     --background-icons: #252e37;
     --background-card: #1e252f;
-    --width : 400px;
+    --width : 350px;
     --border-radius: 25px;
+}
+
+@media screen and (min-width: 500px){
+
+    :root{
+        --width : 400px;
+    }
 }
 
 *,
@@ -22,8 +32,11 @@
 
 body {
     font-size: 15px;
+    font-family: 'Overpass', sans-serif;
     
     color: var(--light-grey);
+
+
 }
 
 main {
@@ -34,6 +47,7 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: var(--very-dark-blue);
+    padding: 1em;
 }
 
 h1 {
@@ -45,7 +59,7 @@ h1 {
     background-color: var(--background-card);
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     padding: 3em 1.5em ;
     border-radius: var(--border-radius);
 }
@@ -63,7 +77,11 @@ h1 {
 }
 
 .img-container img {
-    width: 50%;
+    width: 40%;
+}
+
+p {
+    line-height: 1.5;
 }
 
 .rating_section ul {
@@ -89,6 +107,7 @@ button {
     border-radius: var(--border-radius);
     height: 3em;
     color: white;
+    text-transform: uppercase;
 }
 
 .thank_you_section {

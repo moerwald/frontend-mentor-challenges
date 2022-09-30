@@ -54,6 +54,7 @@ h1 {
     color: var(--white);
 }
 
+.thank_you_section,
 .rating_section {
     max-width: var(--width);
     background-color: var(--background-card);
@@ -131,6 +132,31 @@ button:hover {
 button:disabled {
     background-color: var(--light-grey);
     opacity: 0.5;
+}
+
+.thank_you_section {
+    align-items: center;
+}
+
+.thank_you_section img{
+    width: 50%;
+}
+
+.thank_you_section p:first-of-type {
+    background-color: var(--background-icons);
+    border-radius: var(--border-radius);
+    color: var(--orange);
+    padding: .5em 1em;
+}
+
+.thank_you_section strong {
+    font-size: 2em;
+    color: white;
+    font-weight: 900;
+}
+
+.thank_you_section p {
+    text-align: center;
 }
 
 .display-no {

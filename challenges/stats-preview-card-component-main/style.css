@@ -30,17 +30,20 @@ body {
     justify-content: center;
     align-items: center;
     gap: 4em;
+
 }
 
 main {
     background-color: var(--pc-dark-desaturated-blue);
-    min-width: calc( var( --width) - 10%);
     border-radius: 2%;
     overflow: hidden;
     
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    min-width: clamp(375px, calc( var( --width) - 10%), 1440px);
+
 }
 
 

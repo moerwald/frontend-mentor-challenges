@@ -31,6 +31,8 @@ body {
     align-items: center;
     gap: 4em;
     height: 100vh;
+    padding: 5% 10%;
+    min-width: var(--width);
 
 }
 

@@ -30,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 4em;
+    height: 100vh;
 
 }
 
@@ -42,7 +43,8 @@ main {
     flex-direction: column;
     align-items: center;
 
-    min-width: clamp(375px, calc( var( --width) - 10%), 1440px);
+    width: 350px;
+
 
 }
 

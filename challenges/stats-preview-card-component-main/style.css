@@ -34,7 +34,7 @@ body {
 
 main {
     background-color: var(--pc-dark-desaturated-blue);
-    width: calc( var( --width) - 10%);
+    min-width: calc( var( --width) - 10%);
     border-radius: 2%;
     overflow: hidden;
     

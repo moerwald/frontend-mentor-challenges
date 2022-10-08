@@ -22,7 +22,7 @@ body {
     font-size: 15px;
 
     background-color: var(--pc-very-dark-blue);
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;
     color: var(--nc-white);
 
     display: flex;
@@ -40,43 +40,41 @@ main {
     background-color: var(--pc-dark-desaturated-blue);
     border-radius: 2%;
     overflow: hidden;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
     width: 350px;
-
-
 }
 
-
-.image-container  {
+.image-container {
     background-color: var(--pc-soft-violet);
     flex-basis: 0.5;
 }
 
-.image-container  > img {
+.image-container>img {
     opacity: 0.5;
     width: 100%;
     height: 100%;
 }
 
-.information-container  {
+.information-container {
     text-align: center;
     padding: 2em 3em 0em 3em;
 }
-.information-container > h1 {
+
+.information-container>h1 {
     font-weight: 700;
     font-size: 1.7em;
 }
 
-.information-container > h1 > span {
+.information-container>h1>span {
     color: var(--pc-soft-violet);
 }
 
-.information-container > p {
-    color: var(--nc-slightly-transparent-gray) ;
+.information-container>p {
+    color: var(--nc-slightly-transparent-gray);
     font-weight: 400;
     line-height: 1.5em;
 }
@@ -90,7 +88,7 @@ main {
 }
 
 .detail-information-container p {
-    color: var(--nc-slightly-transparent-gray) ;
+    color: var(--nc-slightly-transparent-gray);
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -103,4 +101,38 @@ main {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 600px) {
+    main {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    article {
+        flex-basis: 50%;
+    }
+
+    .information-container {
+        order: 1;
+        text-align: initial;
+    }
+
+    .information-container>h1 {
+        font-size: 2em;
+    }
+
+    .image-container {
+        order: 2;
+        flex-basis: 50%;
+    }
+
+    .detail-information-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 10%;
+        gap: 20%;
+    }
+
 }

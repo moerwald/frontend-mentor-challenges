@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+
+    --width: 375px;
+
+    /* Colors */
+    --pc-very-dark-blue: hsl(233, 47%, 7%);
+    --pc-dark-desaturated-blue: hsl(244, 38%, 16%);
+    --pc-soft-violet: hsl(277, 64%, 61%);
+
+    --nc-white: hsl(0, 0%, 100%);
+    --nc-slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --nc-slightly-transparent-gray: hsla(0, 0%, 100%, 0.6);
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+
+    background-color: var(--pc-very-dark-blue);
+    font-family: 'Inter', sans-serif;    
+    color: var(--nc-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+main {
+    background-color: var(--pc-dark-desaturated-blue);
+    width: calc( var( --width) - 10%);
+    border-radius: 2%;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.image-container  {
+    background-color: var(--pc-soft-violet);
+    flex-basis: 0.5;
+}
+
+.image-container  > img {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.information-container  {
+    text-align: center;
+    padding: 2em 3em 0em 3em;
+}
+.information-container > h1 {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.information-container > h1 > span {
+    color: var(--pc-soft-violet);
+}
+
+.information-container > p {
+    color: var(--nc-slightly-transparent-gray) ;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.detail-information-container {
+    text-align: center;
+}
+
+.detail-information-container section:last-child {
+    margin-bottom: 2em;
+}
+
+.detail-information-container p {
+    color: var(--nc-slightly-transparent-gray) ;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

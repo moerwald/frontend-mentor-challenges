@@ -87,7 +87,7 @@ article > a {
     padding: 0.5em 2em;
     border-radius: 2em;
     background-color: var(--Very-light-gray--background--headings--buttons);
-    color: rgba(230, 27, 27, 0.438);
+    color: rgba(0, 0, 0, 0.5);
 
 }
 

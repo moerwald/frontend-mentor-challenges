@@ -14,7 +14,7 @@
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
 }
- 
+
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +56,7 @@ article:last-child {
 }
 
 article {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -80,19 +81,36 @@ p {
     line-height: 1.75;
 }
 
-a {
+article > a {
     text-decoration: none;
     border: 1px solid var(--Very-light-gray--background--headings--buttons);
     padding: 0.5em 2em;
     border-radius: 2em;
     background-color: var(--Very-light-gray--background--headings--buttons);
     color: rgba(230, 27, 27, 0.438);
-    
+
 }
 
 a:hover {
     background-color: transparent;
     color: var(--Very-light-gray--background--headings--buttons);
+}
+
+@media screen and (min-width: 600px) {
+    .main-container {
+        flex-direction: row;
+    }
+
+    article:first-child {
+        background-color: var(--Bright-orange);
+        border-radius: var(--article-border-radius) 0 0 var(--article-border-radius);
+    }
+
+    article:last-child {
+        background-color: var(--Very-dark-cyan);
+        border-radius: 0 var(--article-border-radius) var(--article-border-radius) 0;
+    }
+
 }
 
 .attribution {

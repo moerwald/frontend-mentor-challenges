@@ -31,8 +31,7 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    place-content: center;
 }
 
 .card-1st {
@@ -50,15 +49,18 @@ body {
 }
 
 article {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 15rem;
+
     padding: 4em 2.5em;
     gap: 2em;
+
     background-color: var(--card-background-color, hotpink);
     color: var(--card-background-color, hotpink);
+
+    width: 20rem;
+
 }
 
 :where(h2, p) {
@@ -103,7 +105,6 @@ a:hover {
         background-color: var(--Very-dark-cyan);
         border-radius: 0 var(--article-border-radius) var(--article-border-radius) 0;
     }
-
 }
 
 .attribution {

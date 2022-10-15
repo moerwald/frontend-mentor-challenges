@@ -18,20 +18,14 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-
     box-sizing: border-box;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 2em;
-    margin-top: 4em;
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #F2F2F2;
 }
 
 .main-container {
@@ -41,17 +35,17 @@ main {
     justify-content: center;
 }
 
-article {
-    background-color: var(--Dark-cyan);
-}
-
-article:first-child {
-    background-color: var(--Bright-orange);
+.card-1st {
+   --card-background-color : var(--Bright-orange);
     border-radius: var(--article-border-radius) var(--article-border-radius) 0 0;
 }
 
-article:last-child {
-    background-color: var(--Very-dark-cyan);
+.card-2nd {
+   --card-background-color : var(--Dark-cyan);
+}
+
+.card-3rd {
+   --card-background-color : var(--Very-dark-cyan);
     border-radius: 0 0 var(--article-border-radius) var(--article-border-radius);
 }
 
@@ -63,15 +57,15 @@ article {
     width: 15rem;
     padding: 4em 2.5em;
     gap: 2em;
+    background-color: var(--card-background-color, hotpink);
+    color: var(--card-background-color, hotpink);
 }
 
-
-h1,
-p {
+:where(h2, p) {
     color: var(--Very-light-gray--background--headings--buttons);
 }
 
-h1 {
+h2 {
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 2.5em;
@@ -87,8 +81,7 @@ article > a {
     padding: 0.5em 2em;
     border-radius: 2em;
     background-color: var(--Very-light-gray--background--headings--buttons);
-    color: rgba(0, 0, 0, 0.5);
-
+    color: var(--card-background-color, hotpink);
 }
 
 a:hover {
@@ -101,12 +94,12 @@ a:hover {
         flex-direction: row;
     }
 
-    article:first-child {
+    .card-1st {
         background-color: var(--Bright-orange);
         border-radius: var(--article-border-radius) 0 0 var(--article-border-radius);
     }
 
-    article:last-child {
+    .card-3rd {
         background-color: var(--Very-dark-cyan);
         border-radius: 0 var(--article-border-radius) var(--article-border-radius) 0;
     }
@@ -116,6 +109,7 @@ a:hover {
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 2em;
 }
 
 .attribution a {

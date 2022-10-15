@@ -1,6 +1,7 @@
 
 :root {
 
+    --article-width: calc(375px - 25px);
 }
 
 * {
@@ -9,9 +10,33 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+
+article {
+    display:flex;
+    flex-direction: column;
+    place-content: center;
+
+    width: var(--article-width);
+
+}
+
+header > img {
+    width: 100%;
+    object-fit: cover;
+    flex-basis: 1;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .attribution a {

@@ -45,34 +45,29 @@ article {
     overflow: hidden;
 }
 
-article>header {
-    overflow: hidden;
-}
-
 .header-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-article>p {
+.info {
     line-height: 1.5;
     color: var(--Desaturated-Dark-Blue);
 }
 
-article>h2 {
+.info > h2 {
     font-size: 1.25rem;
     font-weight: 800;
 
-    line-height: 1.5;
-
-    margin-top: 1rem;
+    margin: 1rem 0;
 
     color: var(--Very-Dark-Grayish-Blue);
 }
 
-:where(article > h2,
-    article > p,
+
+:where(.info > h2,
+       .info > p,
     article > footer) {
     padding: 0 3.5rem;
 }
@@ -117,6 +112,39 @@ footer {
     height: var(--dimension);
 
     place-self: center center;
+}
+
+@media screen and (min-width: 600px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1.75fr;
+        grid-template-areas: 
+        "header info"
+        "header footer";
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+
+        max-width: 700px;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .header-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+    
 }
 
 .attribution {

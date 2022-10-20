@@ -68,12 +68,13 @@ article {
 
 :where(.info > h2,
        .info > p,
-    article > footer) {
+    article > footer,
+    #social-media-banner) {
     padding: 0 3.5rem;
 }
 
 article>footer {
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 footer {
@@ -81,7 +82,7 @@ footer {
     grid-template-columns: min-content 1fr min-content;
     grid-column-gap: 0.5rem;
     margin-top: 1rem;
-
+    position: relative;
 }
 
 .footer-img {
@@ -103,7 +104,7 @@ footer {
     color: var(--Very-Dark-Grayish-Blue);
 }
 
-.share-button {
+#share-button {
     border-radius: 50%;
     border-color: transparent;
 
@@ -112,6 +113,8 @@ footer {
     height: var(--dimension);
 
     place-self: center center;
+
+    z-index: 3;
 }
 
 @media screen and (min-width: 600px) {
@@ -145,6 +148,44 @@ footer {
         grid-area: footer;
     }
     
+}
+
+#social-media-banner {
+    position: absolute;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    justify-items: end;
+
+    transition: top 2s ease, 
+                height 2s ease,
+                opacity 2s ease;
+
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.2rem;
+
+    color: var(--Desaturated-Dark-Blue);
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+#social-media-banner > #share-button {
+    grid-column: 7;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.social-media-hidden {
+    top: 100%;
+    height: 0%;
+    opacity: 0;
+}
+
+.social-media-show {
+    top: 0;
+    height: 100%;
+    opacity: 1;
 }
 
 .attribution {

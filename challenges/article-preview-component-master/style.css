@@ -171,9 +171,17 @@ footer {
     background-color: var(--Very-Dark-Grayish-Blue);
 }
 
-#social-media-banner > #share-button {
+#share-button {
     grid-column: 7;
+}
+
+.share-button-inactive {
     background-color: var(--Light-Grayish-Blue);
+}
+
+.share-button-activated {
+    fill:white;
+    background-color: var(--Desaturated-Dark-Blue);
 }
 
 .social-media-hidden {

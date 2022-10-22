@@ -73,16 +73,14 @@ article {
     padding: 0 3.5rem;
 }
 
-article>footer {
-    padding-bottom: 2.5rem;
-}
 
 footer {
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     grid-column-gap: 0.5rem;
-    margin-top: 1rem;
     position: relative;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .footer-img {
@@ -103,7 +101,6 @@ footer {
 .footer-info>p:first-child {
     color: var(--Very-Dark-Grayish-Blue);
 }
-
 
 #social-media-banner {
     position: absolute;

@@ -8,16 +8,15 @@ button.addEventListener("click", () => {
     const shareButtonIsActive = "share-button-activated";
 
     const updateShareButtonColors = function updateShareBtnColors(btn){
-        const iconOfShareButton = document.getElementById("share-button-icon");
-        if (iconOfShareButton.classList.contains(shareButtonIsActive)) {
-            iconOfShareButton.classList.remove(shareButtonIsActive);
+        // Update button colors
+        if (btn.classList.contains(shareButtonIsActive)) {
             btn.classList.remove(shareButtonIsActive);
             return;
         }
-        iconOfShareButton.classList.add(shareButtonIsActive);
         btn.classList.add(shareButtonIsActive);
     };
 
+    // Show/Hide social media banner
     const hiddenClassSet = section.classList.contains(socialMediaHidden);
     section.classList.remove(hiddenClassSet ? socialMediaHidden : socialMediaShowed);
     section.classList.add(hiddenClassSet ? socialMediaShowed : socialMediaHidden);

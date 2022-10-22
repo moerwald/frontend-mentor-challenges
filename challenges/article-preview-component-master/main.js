@@ -23,16 +23,6 @@ button.addEventListener("click", () => {
     section.classList.add(hiddenClassSet ? socialMediaShowed : socialMediaHidden);
 
     updateShareButtonColors(button);
-
-    /*
-    if (hiddenClassSet) {
-        section.appendChild(button);
-        return;
-    }
-
-    const footer = document.getElementsByTagName("footer")[0];
-    footer.appendChild(button);
-    */
 });
 
 

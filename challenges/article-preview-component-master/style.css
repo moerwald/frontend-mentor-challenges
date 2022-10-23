@@ -212,14 +212,16 @@ footer {
         left: 46%;
     }
 
-    .social-media-show {
-        top: -110%;
-        left: 55%
-    }
-
     .social-media-hidden {
         opacity: 0;
         visibility: hidden;
+    }
+
+    .social-media-show {
+        top: -110%;
+        left: 55%;
+        opacity: 1;
+        visibility: initial;
     }
 
 }

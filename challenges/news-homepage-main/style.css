@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+
+    --pc-soft-orange: hsl(35, 77%, 62%);
+    --pc-soft-red: hsl(5, 85%, 63%);
+
+    --nc-off-white: hsl(36, 100%, 99%);
+    --nc-grayish-blue: hsl(233, 8%, 79%);
+    --nc-dark-grayish-blue: hsl(236, 13%, 42%);
+    --nc-very-dark-blue: hsl(240, 100%, 5%);
+
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+}
+
+button {
+    appearance: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    visibility: hidden;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
